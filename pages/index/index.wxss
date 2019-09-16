@@ -1,7 +1,9 @@
-page{
+page {
   padding: 10rpx;
 }
+
 /* 导航 */
+
 .nav_wrap {
 }
 
@@ -16,17 +18,67 @@ page{
   display: inline-block;
   color: #666;
 }
-.nav_item.active{
+
+.nav_item.active {
   border-bottom: 5rpx solid red;
 }
+
 /* 轮播图 */
-.slides{
+
+.slides {
   margin-top: 10rpx;
 }
-.slides swiper{
+
+.slides swiper {
   height: 220rpx;
 }
-.slides navigator{
+
+.slides navigator {
   width: 100%;
   height: 100%;
+}
+
+/* 视频列表 */
+
+.video_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rpx;
+  justify-content: space-between;
+}
+
+.video_item {
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+
+.video_img {
+  position: relative;
+}
+
+.video_img image {
+  width: 100%;
+}
+
+.video_img .video_info {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 12rpx;
+  left: 0;
+  width: 100%;
+  font-size: 30rpx;
+  color: white;
+}
+
+.video_title {
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  /* 子元素排列 vertical（竖排）orhorizontal（横排） */
+  -webkit-box-orient: vertical;
 }
