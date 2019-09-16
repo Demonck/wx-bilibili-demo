@@ -28,4 +28,37 @@ https://www.cnblogs.com/zeo-to-one/p/8367801.html
   <component-tag-name inner-text="Some text"></component-tag-name>
 </view>
 ```
-### 测试
+
+
+## 创建导航滚动视频类别
+### 使用easy-mock构建数据源
+#### 接口地址
+
+公共路径：https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili
+
+https://easy-mock.com/mock/5ccc2cc89e5cbc7d96b29785/bili
+
+https://www.easy-mock.com/mock/5d590978d3185331448bb542/bilibili
+
+| 接口名称   | 接口路径         | 备注             |
+| ---------- | ---------------- | ---------------- |
+| 首页导航   | /navList         |                  |
+| 首页轮播图 | /swiperList      |                  |
+| 视频列表   | /videosList      |                  |
+| 视频详情   | /videoDetail?id  | 需要带上视频的id |
+| 推荐视频   | /othersList?id   | 需要带上视频的id |
+| 评论列表   | /commentsList?id | 需要带上视频的id |
+### 使用Postman测试api接口
+### 获取导航视频类别api数据
+1. 使用wx.request发起 HTTPS 网络请求
+    https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html
+2. 使用scroll-view创建可滚动视图区域
+    https://developers.weixin.qq.com/miniprogram/dev/component/scroll-view.html
+3. 设置基本样式
+4. 绑定点击事件，通过data传值，使点击的添加点击样式
+    https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
+
+## 创建轮播图
+### 使用Postman测试api接口
+### 通过api获取轮播图数据
+### 创建轮播图样式
