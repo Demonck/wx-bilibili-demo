@@ -1,28 +1,70 @@
-.main{
+.main {
   padding: 10rpx;
 }
+
 /* 视频 */
-.video_info{
+
+.video_info {
   margin-top: 10rpx;
   color: #666;
-} 
-.video_info video{
+}
+
+.video_info video {
   width: 100%;
 }
-.video_title{
+
+.video_title {
   display: flex;
   justify-content: space-between;
   font-size: 35rpx;
   color: black;
 }
-.video_detail{
+
+.video_detail {
   display: flex;
   justify-content: space-around;
   font-size: 30rpx;
   margin-top: 10rpx;
 }
-.video_detail .author{
+
+.video_detail .author {
   color: black;
 }
 
 /* 推荐视频 */
+
+.author_recommend_list {
+  margin-top: 35rpx;
+}
+
+.arecommend_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+}
+
+.recommend_img {
+  display: flex;
+  width: 38%;
+  justify-content: center;
+  justify-items: center;
+}
+.recommend_img image{
+  width: 90%;
+  border-radius: 15rpx;
+}
+
+.recommend_info{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.recommend_title{
+  font-size: 30rpx;
+  color:black;
+}
+.recommend_detail{
+  font-size: 26rpx;
+  color: #666;
+}

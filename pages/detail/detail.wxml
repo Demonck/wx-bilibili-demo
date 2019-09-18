@@ -24,16 +24,44 @@
       <!-- 视频详情 -->
       <view class="recommend_info">
         <!-- 标题 -->
-          <view class="recommend_title">{{item.title}}</view>
+        <view class="recommend_title">{{item.title}}</view>
         <!-- 信息 -->
         <view class="recommend_detail">
           <!-- 点击-评论-收藏 -->
-          <text>{{item.click/10000}}万点击</text>
-          <text>{{item.review}}评论</text>
+          <text>{{item.click/10000}}万点击 </text>
+          <text>{{item.review}}评论 </text>
           <text>{{item.favorites}}收藏</text>
         </view>
       </view>
     </navigator>
   </view>
   <!-- 评论区 -->
+  <view>
+    <!-- 顶部 -->
+    <view>
+      <text>{{commentList.page.acount}}</text>
+    </view>
+    <!-- 评论区 -->
+    <view wx:for="{{commentList.replies}}" wx:key="{{index}}">
+      <!-- 图片 -->
+      <view>
+        <image mode="widthFix" src="{{item.member.avatar}}"></image>
+      </view>
+
+      <view>
+        <view>{{item.member.uname}}</view>
+      </view>
+
+      <!-- 评论的评论 -->
+      <view wx:for="{{item.replies}}" wx:key="{{index}}" wx:for-item="items">
+        <view>{{items.member.uname}}:{{items.content.message}}</view>
+        
+      </view>
+
+    </view>
+
+
+   
+
+  </view>
 </view>
